@@ -6,6 +6,7 @@ import BookmarksContext from './BookmarksContext';
 import Nav from './Nav/Nav';
 import config from './config';
 import './App.css';
+import Rating from './Rating/Rating';
 
 class App extends Component {
   state = {
@@ -78,6 +79,9 @@ class App extends Component {
             />
           </div>
         </BookmarksContext.Provider>
+        <Rating value={6}/>
+        <AddBookmark title={3}/>
+        <BookmarkList bookmarks={[{a:2, b:4}, {a:9, b:12}]}/>
       </main>
     );
   }
